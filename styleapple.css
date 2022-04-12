@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.863);
+  color: white;
+}
+.big {
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+}
+.small {
+  display: none;
+}
+a {
+  color: rgb(57, 134, 134);
+}
+/*start editing first item */
+.first-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(240, 239, 226, 0.322);
+}
+.first-item h3,
+h4 {
+  font-family: "Anek Tamil", sans-serif;
+  font-size: 50px;
+}
+.first-item h3 {
+  font-size: 60px;
+}
+.first-item img {
+  height: 500px;
+}
+
+.first-item a:nth-child(2) {
+  margin-left: 10px;
+}
+
+/*stop editing first item */
+
+/*start editing second item */
+.second-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(240, 239, 226, 0.322);
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  gap: 10px;
+}
+.second-item img {
+  height: 500px;
+}
+.border-for-SE {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.second-item h3:nth-child(1) {
+  font-size: 25px;
+}
+.second-item h3:nth-child(3) {
+  font-size: 30px;
+}
+.second-item a:nth-child(2) {
+  margin-left: 10px;
+}
+/* stop editing second item */
+/* start layout */
+.biggest-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.biggest-container-1 {
+  flex: 1 1 auto;
+  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.biggest-container-1 div:nth-child(1) {
+  text-align: center;
+  color: white;
+  margin-right: 40px;
+}
+.biggest-container-1 div:nth-child(2) img {
+  max-width: 100%;
+}
+/*start first item layout container*/
+.Cont-A {
+  display: flex;
+}
+.Cont-A > div {
+  flex: 1;
+}
+.biggest-container-2 {
+}
+
+.Cont-B {
+  display: flex;
+}
+.Cont-B > div {
+  flex: 1;
+}
+.Cont-C {
+  display: flex;
+}
+.Cont-C > div {
+  flex: 1;
+}
+/* stop layput */
+/* media query start */
+@media screen and (max-width: 960px) {
+  .first-item img {
+    height: 200px;
+  }
+  .first-item h4 {
+    font-size: 1.5rem;
+  }
+  .first-item h3 {
+    font-size: 2rem;
+  }
+  .second-item img {
+    height: 200px;
+  }
+  .biggest-container-1 {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .big {
+    display: none;
+  }
+  .small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
