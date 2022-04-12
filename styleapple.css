@@ -101,13 +101,30 @@ h4 {
 /*start first item layout container*/
 .Cont-A {
   display: flex;
+  gap: 3px;
+  margin-top: 3px;
 }
 .Cont-A > div {
   flex: 1;
 }
 .biggest-container-2 {
+  width: 40vw;
+}
+.biggest-container-2 img {
+  vertical-align: bottom;
+  max-width: 100%;
 }
 
+.biggest-container-3 {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #020914;
+}
+.biggest-container-3 img {
+  max-width: 88%;
+}
 .Cont-B {
   display: flex;
 }
@@ -150,5 +167,15 @@ h4 {
     height: 48px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .Cont-A {
+    flex-direction: column;
+  }
+  .biggest-container-2 {
+    width: 100vw;
+  }
+  .biggest-container-3 {
+    width: 100vw;
+    padding: 60px;
   }
 }
